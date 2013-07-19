@@ -11,7 +11,7 @@ require('./app/config/routes')(app, config);
 
 module.exports = app;
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 5000;
 
 app.listen(port,function(){
     console.log("Listening on Port "+port);
