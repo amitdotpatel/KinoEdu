@@ -15,7 +15,7 @@ The platform would support following in Phase 1
 
 Setup
 ======
-Following Steps needs to be taken before you can run this platform locally
+Following Steps needs to be taken before you can run this platform locally. Please note that these steps are applicable for the 'ui' branch only.
 
 Step 1.
 ------
@@ -23,34 +23,8 @@ $>git clone https://github.com/rohitghatol/KinoEdu.git
 
 Step 2.
 ------
-(Required for Only Local Development Mode)
-
-Install Mongo DB and run it on default port
-
-$>mongod
+npm install
 
 Step 3.
 ------
-Push Environment Variables
-
-export admin_name=admin
-
-export admin_email=admin@synerzip.com
-
-export admin_password=admin123
-
-export main_client_name=clientname
-
-export main_client_description=clientdesc
-
-export main_client_redirect_uris='1,2,3'
-
-
-Step 4.
-------
-
-To Run the Application Locally
-
-$>npm install
-
-$>npm start
+npm start
