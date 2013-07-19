@@ -4,7 +4,7 @@ define({
 
     require:{
         paths:{
-            'jquery':'components/jquery/jquery'
+            'jquery':'bower_components/jquery/jquery'
         }
     },
 

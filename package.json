@@ -36,6 +36,6 @@
         "test": "mocha -R spec test/usermodeltest --timeout 50000",
         "predeploy": "echo This will be run before deploying the app",
         "postdeploy": "echo This will be run after deploying the app",
-        "postinstall":"./node_modules/bower/bin/bower install"
+        "postinstall":"$(npm bin)/bower install"
     }
 }

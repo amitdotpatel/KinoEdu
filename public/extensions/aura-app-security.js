@@ -6,8 +6,8 @@ define(function () {
         return {
             require:{
                 paths:{
-                    backbone:'components/backbone/backbone',
-                    underscore:'components/underscore/underscore'
+                    backbone:'bower_components/backbone/backbone',
+                    underscore:'bower_components/underscore/underscore'
                 },
                 shim:{
                     backbone:{ exports:'Backbone', deps:['underscore', 'jquery'] }

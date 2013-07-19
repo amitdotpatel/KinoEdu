@@ -50,7 +50,9 @@ module.exports = function (passport, config) {
         }
     ))
 
-    // use twitter strategy
+    //TODO : Remove below commented code once go to demo or live server.
+
+    /*// use twitter strategy
     passport.use(new TwitterStrategy({
             consumerKey: config.twitter.clientID
             , consumerSecret: config.twitter.clientSecret
@@ -193,5 +195,5 @@ module.exports = function (passport, config) {
                 }
             })
         }
-    ));
+    ));*/
 }

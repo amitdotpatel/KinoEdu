@@ -31,102 +31,22 @@ $>mongod
 
 Step 3.
 ------
-(Required for Both Production and Development Mode)
+Push Environment Variables
 
-Create a Heroku Account and Sign in Using that in the Source Code Directory
+export admin_name=admin
 
-$>heroku login
+export admin_email=admin@synerzip.com
+
+export admin_password=admin123
+
+export main_client_name=clientname
+
+export main_client_description=clientdesc
+
+export main_client_redirect_uris='1,2,3'
+
 
 Step 4.
-------
-Push Environment Variables to Local and Heroku Environment
-
-Settings for Development Mode Deployment on Local Machine
-
-$> heroku config:set AppMode = development
-
-$> export MONGOLAB_URI= <<production heroku MongoDB>>
-
-$> export facebook_clientID= <<Facebook App Client ID>>
-
-$> export facebook_clientSecret= <<Facebook App Client Secret>>
-
-$> export twitter_clientID= <<Twitter App Client ID>>
-
-$> export twitter_clientSecret= <<Twitter App Client Secret>>
-
-$> export linkedin_clientID = <<LinkedIn App Client ID>>
-
-$> export linkedin_clientSecret = <<LinkedIn App Client Secret>>
-
-$> export google_clientID = <<Google App Client ID>>
-
-$> export google_clientSecret = <<Google App Client Secret>>
-
-$> export email_send_user = <<Email Username>>
-
-$> export email_send_password = <<Email Password>>
-
-$> export email_host = <<Email Host Server>>
-
-$> export email_ssl = <<true/false>>
-
-$> export admin_name = <<user name for admin user>>
-
-$> export admin_email = <<email for admin user>>
-
-$> export admin_password = <<password for admin user>>
-
-$> export main_client_name = <<name of the main client>>
-
-$> export main_client_description = <<description of the main client>>
-
-$> export main_client_redirectURIs = <<redirect_uris for the main client>>
-
-Settings for Production Mode Deployment on Heroku
-
-$> heroku config:set AppMode = production
-
-$> heroku config:set MONGOLAB_URI= <<production heroku MongoDB>>
-
-$> heroku config:set facebook_clientID= <<Facebook App Client ID>>
-
-$> heroku config:set facebook_clientSecret= <<Facebook App Client Secret>>
-
-$> heroku config:set twitter_clientID= <<Twitter App Client ID>>
-
-$> heroku config:set twitter_clientSecret= <<Twitter App Client Secret>>
-
-$> heroku config:set linkedin_clientID = <<LinkedIn App Client ID>>
-
-$> heroku config:set linkedin_clientSecret = <<LinkedIn App Client Secret>>
-
-$> heroku config:set google_clientID = <<Google App Client ID>>
-
-$> heroku config:set google_clientSecret = <<Google App Client Secret>>
-
-$> heroku config:set email_send_user = <<Email Username>>
-
-$> heroku config:set email_send_password = <<Email Password>>
-
-$> heroku config:set email_host = <<Email Host Server>>
-
-$> heroku config:set email_ssl = <<true/false>>
-
-$> heroku config:set admin_name = <<user name for admin user>>
-
-$> heroku config:set admin_email = <<email for admin user>>
-
-$> heroku config:set admin_password = <<password for admin user>>
-
-$> heroku config:set main_client_name = <<name of the main client>>
-
-$> heroku config:set main_client_description = <<description of the main client>>
-
-$> heroku config:set main_client_redirectURIs = <<redirect_uris for the main client>>
-
-
-Step 5.
 ------
 
 To Run the Application Locally
@@ -134,13 +54,3 @@ To Run the Application Locally
 $>npm install
 
 $>npm start
-
-To Run the Application on Heroku
-
-//Add all local files, commit and push to heroku
-
-$>git add .
-
-$>git commit -a -m "comments..."
-
-$>git push heroku master

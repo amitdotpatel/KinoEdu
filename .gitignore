@@ -6,14 +6,11 @@ lib-cov
 *.out
 *.pid
 *.gz
-
+.idea
 .DS_Store
-
 pids
 logs
 results
-
-public/components/*
-
+public/bower_components/*
 npm-debug.log
 node_modules

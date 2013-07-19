@@ -4,7 +4,7 @@ define({
 
     require:{
         paths:{
-            backbone: 'components/backbone/backbone',
+            backbone: 'bower_components/backbone/backbone',
         }
     },
 

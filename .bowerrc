@@ -1,5 +1,4 @@
 {
-  "directory" : "public/components",
-  "json"      : "component.json",
+  "directory" : "public/bower_components",
   "endpoint"  : "https://bower.herokuapp.com"
 }

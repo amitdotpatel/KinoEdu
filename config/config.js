@@ -12,7 +12,8 @@ module.exports = {
             name:'KinoEdu'
         },
         db:'mongodb://localhost/kinoedu',
-        facebook:{
+        //TODO : Remove below commented code once go to demo or live server.
+        /*facebook:{
             clientID:process.env.facebook_clientID, clientSecret:process.env.facebook_clientSecret, callbackURL:'http://localhost:5000/auth/facebook/callback'
         },
         twitter:{
@@ -23,7 +24,7 @@ module.exports = {
         },
         google:{
             clientID:process.env.google_clientID, clientSecret:process.env.google_clientSecret, callbackURL:'http://localhost:5000/auth/google/callback'
-        },
+        },*/
         email:{
             user:process.env.email_send_user,
             password:process.env.email_send_password,
@@ -45,7 +46,9 @@ module.exports = {
             name:'KinoEdu'
         },
         db:process.env.MONGOLAB_URI || process.env.MONGOHQ_URL,
-        facebook:{
+
+        //TODO : Remove below commented code once go to demo or live server.
+        /*facebook:{
             clientID:process.env.facebook_clientID, clientSecret:process.env.facebook_clientSecret, callbackURL:'http://www.kinoedu.com/auth/facebook/callback'
         },
         twitter:{
@@ -56,7 +59,7 @@ module.exports = {
         },
         google:{
             clientID:process.env.google_clientID, clientSecret:process.env.google_clientSecret, callbackURL:'http://www.kinoedu.com/auth/google/callback'
-        },
+        },*/
         email:{
             user:process.env.email_send_user,
             password:process.env.email_send_password,

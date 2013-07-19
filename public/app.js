@@ -6,8 +6,12 @@
  * To change this template use File | Settings | File Templates.
  */
 
-define(['components/aura/lib/aura'], function(Aura) {
-    Aura()
+define(['bower_components/aura/lib/aura'], function(Aura) {
+    Aura({
+        sources: {
+            default: './widgets'
+        }
+    })
         .use('extensions/aura-backbone')
         .use('extensions/aura-localstorage')
         .use('extensions/aura-handlebars')
