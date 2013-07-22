@@ -1,4 +1,4 @@
-module.export = {
+module.exports = {
   data: [
     {
       title: 'Introduction to NodeJS',
